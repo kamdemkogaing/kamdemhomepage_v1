@@ -1,38 +1,41 @@
-import React from 'react';
-import { Link,Route,Switch } from "react-router-dom";
 
-// nodejs library that concatenates strings
-import classnames from "classnames";
+import React from "react";
+import{ Navbar, Nav, NavDropdown}  from "react-bootstrap";
 
-// reactstrap components
-import { Collapse, NavbarBrand, Navbar, NavItem, NavLink, Nav, Container, Form } from "reactstrap";
-import { Button, NavDropdown, FormControl } from 'react-bootstrap';
-
-
-function KamdemNavbar() {
-  /* return ( */
-    <Navbar bg="light" expand="lg">
-      <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#link">Link</Nav.Link>
-          <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-          </NavDropdown>
-        </Nav>
-        <Form inline>
-          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-          <Button variant="outline-success">Search</Button>
-        </Form>
-      </Navbar.Collapse>
-    </Navbar>
- /*  ); */
+class KamdemNavbar extends React.Component { 
+  render() { 
+    return (
+      <div class="bg-secondary">
+        <div class="container">
+          <Navbar collapseOnSelect expand="lg" variant="dark">
+            <Navbar.Brand href="https://patelot.de">Home</Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
+              <Nav className="mr-auto">
+                <Nav.Link target="_blank" href="https://bitbucket.org/patelotblack/">Projekte</Nav.Link>
+                <Nav.Link target="_blank" href="https://www.lequipe.fr/">Hobbies</Nav.Link>
+                <NavDropdown title="Partners" id="collasible-nav-dropdown">
+                  <NavDropdown.Item target="_blank" href="https://www.kogaing.com">Kogaing Sarl</NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item target="_blank" href="https://yanson.de/">Yan'son IT Consulting</NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item target="_blank" href="http://www.cclean-services.com">CClean Services</NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item target="_blank" href="http://www.pouahom-bw.de">Les Bahamas du BW</NavDropdown.Item>
+                </NavDropdown>
+              </Nav>
+              <Nav>
+                <Nav.Link href="mailto:patrick-kamdem@patelot.de">Kontakt</Nav.Link>
+                <Nav.Link eventKey={2} target="_blank" href="https://www.ionos.de/">
+                  Mehr
+                </Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Navbar>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default KamdemNavbar;

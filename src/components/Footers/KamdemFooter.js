@@ -15,6 +15,9 @@ function KamdemFooter() {
             <FontAwesomeIcon icon={faTwitterSquare} />
           </a>
           <a class="btn btn-outline-light btn-floating m-1" href="#" role="button">
+            <FontAwesomeIcon icon={faTwitterSquare} />
+          </a>
+          <a class="btn btn-outline-light btn-floating m-1" href="#" role="button">
             <FontAwesomeIcon icon={faGithub} />
             <i class="fas fa-envelope"></i>
           </a>

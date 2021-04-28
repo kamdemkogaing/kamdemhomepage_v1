@@ -17,9 +17,9 @@ class KamdemTopView extends React.Component {
                 <p className="card-text">
                   Danke, dass Du auf meine Seite schaust. Ich bin der Patrick und kam vor 15 Jahren nach Deutschland. Geboren bin ich in Zentralafrika, im schönsten Land: Kamerun. Es grenzt an den Atlantischen Ozean durch die Bucht von Bonny.
                 </p>
-                <strong>
-                  <a href="mailto:patrick-kamdem@patelot.de" className="btn btn-secondary">Mich kontaktieren</a>
-                </strong>
+                <div className="text-right">
+                  <a href="mailto:patrick-kamdem@patelot.de" className="btn btn-secondary font-weight-bold">Mich kontaktieren</a>
+                </div>
               </div>
             </div>
           </div>

@@ -5,8 +5,8 @@ import{ Navbar, Nav, NavDropdown}  from "react-bootstrap";
 class KamdemNavbar extends React.Component { 
   render() { 
     return (
-      <div class="bg-secondary">
-        <div class="container">
+      <div className="bg-secondary">
+        <div className="container">
           <Navbar collapseOnSelect expand="lg" variant="dark">
             <Navbar.Brand href="https://patelot.de">Home</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />

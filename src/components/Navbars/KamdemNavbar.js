@@ -8,7 +8,9 @@ class KamdemNavbar extends React.Component {
       <div className="bg-secondary">
         <div className="container">
           <Navbar collapseOnSelect expand="lg" variant="dark">
-            <Navbar.Brand href="https://patelot.de">Home</Navbar.Brand>
+            <Navbar.Brand href="https://patelot.de">
+              <img className="kamdem-logo" src="img/pk02.svg" alt="Card image cap" style={{ width : '50px'}}/>
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="mr-auto">

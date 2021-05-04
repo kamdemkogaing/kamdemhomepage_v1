@@ -9,7 +9,7 @@ import KamdemFooter from './components/Footers/KamdemFooter.js';
 function App() {
   return (
     <div className="App">
-      <KamdemHeader />
+     {/*  <KamdemHeader /> */}
       <KamdemNavbar />
       <KamdemTopView />
       <KamdemFooter />

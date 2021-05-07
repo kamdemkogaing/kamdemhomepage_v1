@@ -16,8 +16,8 @@ import Icon from "@material-ui/core/Icon";
 import Popper from "@material-ui/core/Popper";
 
 // core components
-import Button from "assets/jss/KamdemButton.js";
-import styles from "assets/jss/KamdemDropdownStyle.js";
+import Button from "./KamdemButton.js";
+import styles from "./KamdemDropdownStyle.js";
 
 const useStyles = makeStyles(styles);
 

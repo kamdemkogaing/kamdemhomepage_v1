@@ -12,7 +12,7 @@ import {
     dangerBoxShadow,
     roseColor,
     roseBoxShadow
-  } from "assets/jss/KamdemMaterial.js";
+  } from "../jss/KamdemMaterial.js";
   
   const KamdemDropdownStyle = theme => ({
     popperClose: {

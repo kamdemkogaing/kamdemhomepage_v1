@@ -10,13 +10,13 @@ import Button from "@material-ui/core/Button";
 
 // core components
 
-import buttonStyle from "assets/jss/KamdemButtonStyle.js";
+import buttonStyle from "./KamdemButtonStyle.js";
 
 const makeComponentStyles = makeStyles(() => ({
   ...buttonStyle
 }));
 
-const RegularButton = React.forwardRef((props, ref) => {
+const KamdemButton = React.forwardRef((props, ref) => {
   const {
     color,
     round,
@@ -54,7 +54,7 @@ const RegularButton = React.forwardRef((props, ref) => {
   );
 });
 
-RegularButton.propTypes = {
+KamdemButton.propTypes = {
   color: PropTypes.oneOf([
     "primary",
     "info",
@@ -81,4 +81,4 @@ RegularButton.propTypes = {
   className: PropTypes.string
 };
 
-export default RegularButton;
+export default KamdemButton;

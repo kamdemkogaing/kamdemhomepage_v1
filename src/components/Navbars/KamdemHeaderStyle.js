@@ -10,7 +10,7 @@ import {
   transition,
   boxShadow,
   drawerWidth
-} from "assets/jss/KamdemMaterial.js";
+} from "../jss/KamdemMaterial.js";
 
 const KamdemHeaderStyle = {
   appBar: {

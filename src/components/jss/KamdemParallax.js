@@ -7,11 +7,11 @@ import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
 
 // core components
-import styles from "assets/jss/KamdemParallaxStyle.js";
+import styles from "./KamdemParallaxStyle.js";
 
 const useStyles = makeStyles(styles);
 
-export default function Parallax(props) {
+export default function KamdemPrallax(props) {
   let windowScrollTop;
   if (window.innerWidth >= 768) {
     windowScrollTop = window.pageYOffset / 3;
@@ -57,7 +57,7 @@ export default function Parallax(props) {
   );
 }
 
-Parallax.propTypes = {
+KamdemPrallax.propTypes = {
   className: PropTypes.string,
   filter: PropTypes.bool,
   children: PropTypes.node,

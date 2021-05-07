@@ -1,6 +1,6 @@
-import { container } from "assets/jss/material-kit-react.js";
+import { container } from "./KamdemMaterial.js";
 
-const KamdemComponents = {
+const KamdemComponentsStyle = {
   container,
   brand: {
     color: "#FFFFFF",
@@ -36,4 +36,4 @@ const KamdemComponents = {
   }
 };
 
-export default KamdemComponents;
+export default KamdemComponentsStyle;

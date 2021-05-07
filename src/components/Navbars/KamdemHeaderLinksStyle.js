@@ -1,6 +1,6 @@
-import { defaultFont } from "assets/jss/KamdemMaterial.js";
+import { defaultFont } from "../jss/KamdemMaterial.js";
 
-import tooltip from "assets/jss/KamdemTooltipsStyle.js";
+import tooltip from "../jss/KamdemTooltipsStyle.js";
 
 const KamdemHeaderLinksStyle = theme => ({
   list: {

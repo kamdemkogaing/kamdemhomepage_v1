@@ -15,9 +15,9 @@ import Tooltip from "@material-ui/core/Tooltip";
 import { Apps, CloudDownload } from "@material-ui/icons";
 
 // core components
-import CustomDropdown from "assets/jss/KamdemDropdown.js";
-import Button from "assets/jss/KamdemButton.js";
-import styles from "assets/jss/KamdemHeaderLinksStyle.js";
+import KamdemDropdown from "../jss/KamdemDropdown.js";
+import KamdemButton from "../jss/KamdemButton.js";
+import styles from "./KamdemHeaderLinksStyle.js";
 
 const useStyles = makeStyles(styles);
 
@@ -26,7 +26,7 @@ export default function HeaderLinks(props) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
-        <CustomDropdown
+        <KamdemDropdown
           noLiPadding
           buttonText="Components"
           buttonProps={{
@@ -49,14 +49,14 @@ export default function HeaderLinks(props) {
         />
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Button
+        <KamdemButton
           href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
           color="transparent"
           target="_blank"
           className={classes.navLink}
         >
           <CloudDownload className={classes.icons} /> Download
-        </Button>
+        </KamdemButton>
       </ListItem>
       <ListItem className={classes.listItem}>
         {/*<Tooltip title="Delete">
@@ -70,14 +70,14 @@ export default function HeaderLinks(props) {
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
-          <Button
+          <KamdemButton
             href="https://twitter.com/CreativeTim?ref=creativetim"
             target="_blank"
             color="transparent"
             className={classes.navLink}
           >
             <i className={classes.socialIcons + " fab fa-twitter"} />
-          </Button>
+          </KamdemButton>
         </Tooltip>
       </ListItem>
       <ListItem className={classes.listItem}>
@@ -87,14 +87,14 @@ export default function HeaderLinks(props) {
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
-          <Button
+          <KamdemButton
             color="transparent"
             href="https://www.facebook.com/CreativeTim?ref=creativetim"
             target="_blank"
             className={classes.navLink}
           >
             <i className={classes.socialIcons + " fab fa-facebook"} />
-          </Button>
+          </KamdemButton>
         </Tooltip>
       </ListItem>
       <ListItem className={classes.listItem}>
@@ -104,14 +104,14 @@ export default function HeaderLinks(props) {
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
-          <Button
+          <KamdemButton
             color="transparent"
             href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
             target="_blank"
             className={classes.navLink}
           >
             <i className={classes.socialIcons + " fab fa-instagram"} />
-          </Button>
+          </KamdemButton>
         </Tooltip>
       </ListItem>
     </List>

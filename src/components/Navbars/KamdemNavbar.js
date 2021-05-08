@@ -1,6 +1,6 @@
 import React from "react";
 // nodejs library that concatenates classes
-//import classNames from "classnames";
+import classNames from "classnames";
 // react components for routing our app without refresh
 //import { Link } from "react-router-dom";
 // @material-ui/core components
@@ -23,7 +23,7 @@ export default function KamdemNavbar(props) {
   return (
     <div>
       <KamdemHeader
-        brand="Material Kit React"
+        brand="Home"
         rightLinks={<KamdemHeaderLinks />}
         fixed
         color="transparent"
@@ -33,13 +33,13 @@ export default function KamdemNavbar(props) {
         }}
         {...rest}
       />
-      <KamdemParallax image={require("../img/bg.jpg")}>
+      <KamdemParallax className="bg-dark" image={require("../img/bg.jpg")}>
         <div className={classes.container}>
           <KamdemGridContainer>
             <KamdemGridItem>
               <div className={classes.brand}>
-                <h1 className={classes.title}>Material Kit React.</h1>
-                <h3 className={classes.subtitle}>A Badass Material-UI Kit based on Material Design.</h3>
+                <h1 className={classes.title}>Patrick Kamdem</h1>
+                <h3 className={classes.subtitle}>Software Developer.</h3>
               </div>
             </KamdemGridItem>
           </KamdemGridContainer>

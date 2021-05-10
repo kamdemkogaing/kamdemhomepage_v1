@@ -1,34 +1,90 @@
+/*eslint-disable*/
+import React from "react";
+// nodejs library to set properties for components
+import PropTypes from "prop-types";
+// nodejs library that concatenates classes
+import classNames from "classnames";
+// material-ui core components
+import { List, ListItem } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  faFacebookF , faTwitterSquare, faInstagramSquare} from '@fortawesome/free-brands-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+// @material-ui/icons
+import Favorite from "@material-ui/icons/Favorite";
 
-function KamdemFooter() {
+import styles from "../Footers/KamdemFooterStyle.js";
+
+const useStyles = makeStyles(styles);
+
+export default function KamdemFooter(props) {
+  const classes = useStyles();
+  const { whiteFont } = props;
+  const footerClasses = classNames({
+    [classes.footer]: true,
+    [classes.footerWhiteFont]: whiteFont
+  });
+  const aClasses = classNames({
+    [classes.a]: true,
+    [classes.footerWhiteFont]: whiteFont
+  });
   return (
-    <footer className="bg-dark text-center text-white">
-      <div className="container p-4 pb-0">
-        <section className="mb-4">
-          <a className="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.facebook.com/patrick.kamdem" role="button">
-            <FontAwesomeIcon icon={faFacebookF} />
+    <footer className={footerClasses}>
+      <div className={classes.container}>
+        <div className={classes.left}>
+          <List className={classes.list}>
+            <ListItem className={classes.inlineBlock}>
+              <a
+                href="https://www.kogaing.com/"
+                className={classes.block}
+                target="_blank"
+              >
+                Kogaing SARL
+              </a>
+            </ListItem>
+            <ListItem className={classes.inlineBlock}>
+              <a
+                href="https://yanson.de/"
+                className={classes.block}
+                target="_blank"
+              >
+                Yan'son IT
+              </a>
+            </ListItem>
+            <ListItem className={classes.inlineBlock}>
+              <a
+                href="http://www.cclean-services.com/"
+                className={classes.block}
+                target="_blank"
+              >
+                CClean Services
+              </a>
+            </ListItem>
+            <ListItem className={classes.inlineBlock}>
+              <a
+                href="http://www.pouahom-bw.de/"
+                className={classes.block}
+                target="_blank"
+              >
+                Les Bahams
+              </a>
+            </ListItem>
+          </List>
+        </div>
+        <div className={classes.right}>
+          &copy; {1900 + new Date().getYear()} , made with{" "}
+          <Favorite className={classes.icon} /> by{" "}
+          <a
+            href="https://patelot.de/"
+            className={aClasses}
+            target="_blank"
+          >
+            Kamdem
           </a>
-          <a className="btn btn-outline-light btn-floating m-1" target="_blank" href="https://twitter.com/PatrickKamdem7" role="button">
-            <FontAwesomeIcon icon={faTwitterSquare} />
-          </a>
-          <a className="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.instagram.com/kamdem73" role="button">
-            <FontAwesomeIcon icon={faInstagramSquare} />
-          </a>
-          <a className="btn btn-outline-light btn-floating m-1" target="_blank" href="https://bitbucket.org/patelotblack" role="button">
-            <FontAwesomeIcon icon={faGithub} />
-            <i className="fas fa-envelope"></i>
-          </a>
-        </section>
-      </div>
-
-      <div className="text-center p-3 bg-info">
-        © 2021 Copyright: <strong><a className="text-white" href="mailto:patrick-kamdem@patelot.de"> KAMDEM</a></strong>
+        </div>
       </div>
     </footer>
   );
 }
 
-export default KamdemFooter;
+KamdemFooter.propTypes = {
+  whiteFont: PropTypes.bool
+};

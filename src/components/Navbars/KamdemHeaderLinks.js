@@ -14,6 +14,10 @@ import Tooltip from "@material-ui/core/Tooltip";
 // @material-ui/icons
 import { Apps, CloudDownload } from "@material-ui/icons";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF , faTwitterSquare, faInstagramSquare } from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+
 // core components
 import KamdemDropdown from "../jss/KamdemDropdown.js";
 import KamdemButton from "../jss/KamdemButton.js";
@@ -28,29 +32,33 @@ export default function HeaderLinks(props) {
       <ListItem className={classes.listItem}>
         <KamdemDropdown
           noLiPadding
-          buttonText="Components"
+          buttonText="Projekte"
           buttonProps={{
             className: classes.navLink,
             color: "transparent"
           }}
           buttonIcon={Apps}
           dropdownList={[
-            <Link to="/" className={classes.dropdownLink}>
-              All components
-            </Link>,
             <a
-              href="https://creativetimofficial.github.io/material-kit-react/#/documentation?ref=mkr-navbar"
+              href="https://geekflare.com/de/best-javascript-frameworks/"
               target="_blank"
               className={classes.dropdownLink}
             >
-              Documentation
+              JavaScript-Frameworks
+            </a>,
+            <a
+              href="https://www.usability.de"
+              target="_blank"
+              className={classes.dropdownLink}
+            >
+              UX Design
             </a>
           ]}
         />
       </ListItem>
       <ListItem className={classes.listItem}>
         <KamdemButton
-          href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
+          href="https://patelot.de/"
           color="transparent"
           target="_blank"
           className={classes.navLink}
@@ -66,51 +74,72 @@ export default function HeaderLinks(props) {
         </Tooltip>*/}
         <Tooltip
           id="instagram-twitter"
-          title="Follow us on twitter"
+          title="Folg mir auf Twitter"
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
           <KamdemButton
-            href="https://twitter.com/CreativeTim?ref=creativetim"
+            href="https://twitter.com/PatrickKamdem7"
             target="_blank"
             color="transparent"
             className={classes.navLink}
           >
-            <i className={classes.socialIcons + " fab fa-twitter"} />
+            {/* <i className={classes.socialIcons + " fab fa-twitter"} /> */}
+            <FontAwesomeIcon icon={faTwitterSquare} />
           </KamdemButton>
         </Tooltip>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-facebook"
-          title="Follow us on facebook"
+          title="Folg mir auf Facebook"
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
           <KamdemButton
             color="transparent"
-            href="https://www.facebook.com/CreativeTim?ref=creativetim"
+            href="https://www.facebook.com/patrick.kamdem"
             target="_blank"
             className={classes.navLink}
           >
-            <i className={classes.socialIcons + " fab fa-facebook"} />
+            {/* <i className={classes.socialIcons + " fab fa-facebook"} /> */}
+            <FontAwesomeIcon icon={faFacebookF} />
           </KamdemButton>
         </Tooltip>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-tooltip"
-          title="Follow us on instagram"
+          title="Folg mir auf Instagram"
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
           <KamdemButton
             color="transparent"
-            href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+            href="https://www.instagram.com/kamdem73"
             target="_blank"
             className={classes.navLink}
           >
-            <i className={classes.socialIcons + " fab fa-instagram"} />
+            {/* <i className={classes.socialIcons + " fab fa-instagram"} /> */}
+            <FontAwesomeIcon icon={faInstagramSquare} />
+          </KamdemButton>
+        </Tooltip>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Tooltip
+          id="bitbucket-tooltip"
+          title="Bitubket"
+          placement={window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <KamdemButton
+            color="transparent"
+            href="https://bitbucket.org/patelotblack"
+            target="_blank"
+            className={classes.navLink}
+          >
+            {/* <i className={classes.socialIcons + " fab fa-instagram"} /> */}
+            <FontAwesomeIcon icon={faGithub} />
           </KamdemButton>
         </Tooltip>
       </ListItem>

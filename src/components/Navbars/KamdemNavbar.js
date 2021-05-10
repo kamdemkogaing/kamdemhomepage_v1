@@ -39,7 +39,7 @@ export default function KamdemNavbar(props) {
             <KamdemGridItem>
               <div className={classes.brand}>
                 <h1 className={classes.title}>Patrick Kamdem</h1>
-                <h3 className={classes.subtitle}>Software Developer.</h3>
+                <h3 className={classes.subtitle}>Software Developer</h3>
               </div>
             </KamdemGridItem>
           </KamdemGridContainer>

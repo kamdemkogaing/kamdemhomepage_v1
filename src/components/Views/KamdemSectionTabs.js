@@ -7,15 +7,15 @@ import Face from "@material-ui/icons/Face";
 import Chat from "@material-ui/icons/Chat";
 import Build from "@material-ui/icons/Build";
 // core components
-import KamdemGridContainer from "components/Grid/KamdemGridContainer.js";
-import KamdemGridItem from "components/GridItem/KamdemGridItem.js";
-import KamdemTabs from "components/Tabs/KamdemTabs.js";
+import KamdemGridContainer from "../Grid/KamdemGridContainer.js";
+import KamdemGridItem from "../GridItem/KamdemGridItem.js";
+import KamdemTabs from "../Tabs/KamdemTabs.js";
 
 import styles from "./KamdemSectionTabsStyle.js";
 
 const useStyles = makeStyles(styles);
 
-export default function SectionTabs() {
+export default function KamdemSectionTabs() {
   const classes = useStyles();
   return (
     <div className={classes.section}>

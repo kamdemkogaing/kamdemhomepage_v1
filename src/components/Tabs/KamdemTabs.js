@@ -55,5 +55,5 @@ const KamdemTabs = {
     }
   };
   
-  export default KamdemTabs;
+export default KamdemTabs;
   

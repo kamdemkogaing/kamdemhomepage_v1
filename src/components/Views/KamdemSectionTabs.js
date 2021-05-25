@@ -6,14 +6,14 @@ import { makeStyles } from "@material-ui/core/styles";
 import Face from "@material-ui/icons/Face";
 import Chat from "@material-ui/icons/Chat";
 import Build from "@material-ui/icons/Build";
+
 // core components
 import KamdemGridContainer from "../Grid/KamdemGridContainer.js";
 import KamdemGridItem from "../GridItem/KamdemGridItem.js";
 import KamdemTabs from "../Tabs/KamdemTabs.js";
+import TabsStyle from "./KamdemSectionTabsStyle.js";
 
-import styles from "./KamdemSectionTabsStyle.js";
-
-const useStyles = makeStyles(styles);
+const useStyles = makeStyles(TabsStyle);
 
 export default function KamdemSectionTabs() {
   const classes = useStyles();

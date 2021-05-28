@@ -25,12 +25,12 @@ function KamdemSectionTabs() {
       <div className={classes.section}>
         <div className={classes.container}>
           <div id="nav-tabs">
-            <h3>Über mich</h3>
+            {/* <h3>Über mich</h3> */}
             <KamdemGridContainer>
               <KamdemGridItem xs={12} sm={12} md={6}>
-                <h5>
+                {/* <h3>
                   <small>WAS BIETE ICH AN</small>
-                </h5>
+                </h3> */}
                 <KamdemTabs
                   headerColor="primary"
                   tabs={[
@@ -47,9 +47,14 @@ function KamdemSectionTabs() {
                       tabName: "Projekte",
                       tabIcon: Chat,
                       tabContent: (
-                        <p className={classes.textLeft}>
-                          Kommt noch ... 
-                        </p>
+                        <div>
+                          <p className={classes.textCenter}>
+                            <strong>WAS BIETE ICH AN :</strong>
+                          </p>
+                          <p className={classes.textLeft}>
+                            HTML, CSS, XML/XSLT, XSD-Schema, JavaScript, JQuery, Vue.js, Node.js, React, TypeScript, Ajax, Bootstrap, MySQL, UML, XAMPP, Photoshop, UX.
+                          </p>
+                        </div>
                       )
                     },
                     {
@@ -57,7 +62,7 @@ function KamdemSectionTabs() {
                       tabIcon: Build,
                       tabContent: (
                         <p className={classes.textLeft}>
-                          Meine Kinder, reisen, essen, DVDs anschauen, Kino, Autos, Internet und Fussball. 
+                          Meine Kinder, reisen, essen, DVDs anschauen, Kino, Autos, Internet, Computer und Fussball. 
                         </p>
                       )
                     }
@@ -65,26 +70,18 @@ function KamdemSectionTabs() {
                 />
               </KamdemGridItem>
               <KamdemGridItem xs={12} sm={12} md={6}>
-                <h5>
+                {/* <h3>
                   <small>MEINE PROJEKTE</small>
-                </h5>
+                </h3> */}
                 <KamdemTabs
                   plainTabs
-                  headerColor="danger"
+                  headerColor="primary"
                   tabs={[
                     {
                       tabName: "Beratung",
                       tabContent: (
                         <p className={classes.textLeft}>
-                          text ... 
-                        </p>
-                      )
-                    },
-                    {
-                      tabName: "Analyse",
-                      tabContent: (
-                        <p className={classes.textLeft}>
-                          text ... 
+                          Wir beraten und unterstützen Ihr Unternehmen mit neuen Web Technologien, Softwares – online oder vor Ort! 
                         </p>
                       )
                     },
@@ -92,23 +89,15 @@ function KamdemSectionTabs() {
                       tabName: "Tests",
                       tabContent: (
                         <p className={classes.textLeft}>
-                          text ... 
+                         Ein Softwaretest prüft und bewertet Software auf Erfüllung der für ihren Einsatz definierten Anforderungen und misst ihre Qualität. Die gewonnenen Erkenntnisse werden zur Erkennung und Behebung von Softwarefehlern genutzt. Tests während der Softwareentwicklung dienen dazu, die Software möglichst fehlerfrei in Betrieb zu nehmen.
                         </p>
                       )
                     },
                     {
-                      tabName: "IT - Architektur",
+                      tabName: "Software",
                       tabContent: (
                         <p className={classes.textLeft}>
-                          text ...
-                        </p>
-                      )
-                    },
-                    {
-                      tabName: "Softwareentwicklung",
-                      tabContent: (
-                        <p className={classes.textLeft}>
-                          text ... 
+                          Wir konzipieren und implementieren Software, die auf Ihre Anforderungen und Bedürfnisse zugeschnitten sind. Sowhol einzelne Bausteine als auch vollständige Applikationen programmieren wir für Sie. 
                         </p>
                       )
                     }

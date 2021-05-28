@@ -89,7 +89,8 @@ KamdemTabs.propTypes = {
     "danger",
     "info",
     "primary",
-    "rose"
+    "rose",
+    "gray"
   ]),
   title: PropTypes.string,
   tabs: PropTypes.arrayOf(

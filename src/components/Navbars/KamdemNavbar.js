@@ -33,7 +33,7 @@ export default function KamdemNavbar(props) {
         }}
         {...rest}
       />
-      <KamdemParallax className="bg-dark" image={require("../img/bg.jpg")}>
+      <KamdemParallax image={require("../img/stage_pk.jpg").default}>
         <div className={classes.container}>
           <KamdemGridContainer>
             <KamdemGridItem>

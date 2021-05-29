@@ -70,15 +70,16 @@ export default function KamdemFooter(props) {
           </List>
         </div>
         <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()} , made with{" "}
+          &copy; {1900 + new Date().getYear()} , copyright {" "}
           <Favorite className={classes.icon} /> by{" "}
           <a
-            href="https://patelot.de/"
+            href="https://www.creative-tim.com?ref=mkr-footer"
             className={aClasses}
             target="_blank"
           >
-            Kamdem
-          </a>
+            KAMDEM
+          </a>{" "}
+          react technology
         </div>
       </div>
     </footer>

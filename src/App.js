@@ -1,4 +1,4 @@
-import './App.css';
+
 import KamdemNavbar from './components/Navbars/KamdemNavbar.js';
 import KamdemFooter from './components/Footers/KamdemFooter.js';
 import KamdemSectionTabs from './components/Views/KamdemSectionTabs.js';
@@ -8,7 +8,7 @@ import KamdemWorkSectionPartner from "./components/Views/KamdemSectionPartner.js
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <KamdemNavbar />
       <KamdemSectionTabs />
       <KamdemSectionLogin />

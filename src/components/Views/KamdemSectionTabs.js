@@ -6,7 +6,7 @@ import classNames from "classnames";
 
 // @material-ui/icons
 import Face from "@material-ui/icons/Face";
-import Chat from "@material-ui/icons/Chat";
+import Sports from "@material-ui/icons/Sports";
 import Build from "@material-ui/icons/Build";
 
 // core components
@@ -25,12 +25,8 @@ function KamdemSectionTabs() {
       <div className={classes.section}>
         <div className={classes.container}>
           <div id="nav-tabs">
-            {/* <h3>Über mich</h3> */}
             <KamdemGridContainer>
               <KamdemGridItem xs={12} sm={12} md={6}>
-                {/* <h3>
-                  <small>WAS BIETE ICH AN</small>
-                </h3> */}
                 <KamdemTabs
                   headerColor="primary"
                   tabs={[
@@ -45,7 +41,7 @@ function KamdemSectionTabs() {
                     },
                     {
                       tabName: "Projekte",
-                      tabIcon: Chat,
+                      tabIcon: Build,
                       tabContent: (
                         <div>
                           <p className={classes.textCenter}>
@@ -59,7 +55,7 @@ function KamdemSectionTabs() {
                     },
                     {
                       tabName: "Hobbies",
-                      tabIcon: Build,
+                      tabIcon: Sports,
                       tabContent: (
                         <p className={classes.textLeft}>
                           Meine Kinder, reisen, essen, DVDs anschauen, Kino, Autos, Internet, Computer und Fussball. 
@@ -70,9 +66,6 @@ function KamdemSectionTabs() {
                 />
               </KamdemGridItem>
               <KamdemGridItem xs={12} sm={12} md={6}>
-                {/* <h3>
-                  <small>MEINE PROJEKTE</small>
-                </h3> */}
                 <KamdemTabs
                   plainTabs
                   headerColor="primary"

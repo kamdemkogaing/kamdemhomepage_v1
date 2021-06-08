@@ -21,8 +21,8 @@ import { faFacebookF , faTwitterSquare, faInstagramSquare } from '@fortawesome/f
 import styles from "./KamdemSectionPartnerStyle.js";
 
 import team1 from "../img/yane.png";
-import team2 from "../img/kogaing.png";
-import team3 from "../img/cclean.JPG";
+import team2 from "../img/kogaing.jpg";
+import team3 from "../img/cclean.jpg";
 
 const useStyles = makeStyles(styles);
 

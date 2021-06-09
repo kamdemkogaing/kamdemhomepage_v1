@@ -1,10 +1,10 @@
 
-import KamdemNavbar from './components/Navbars/KamdemNavbar.js';
-import KamdemFooter from './components/Footers/KamdemFooter.js';
-import KamdemSectionTabs from './components/Views/KamdemSectionTabs.js';
-import KamdemSectionLogin from './components/Views/KamdemSectionLogin.js';
-import KamdemWorkSection from "./components/Views/KamdemWorkSection.js";
-import KamdemWorkSectionPartner from "./components/Views/KamdemSectionPartner.js";
+import KamdemNavbar from './components/Navbars/KamdemNavbar';
+import KamdemFooter from './components/Footers/KamdemFooter';
+import KamdemSectionTabs from './components/Views/KamdemSectionTabs';
+import KamdemSectionLogin from './components/Views/KamdemSectionLogin';
+import KamdemWorkSection from "./components/Views/KamdemWorkSection";
+import KamdemWorkSectionPartner from "./components/Views/KamdemSectionPartner";
 
 function App() {
   return (

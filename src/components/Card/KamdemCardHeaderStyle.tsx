@@ -4,7 +4,7 @@ import {
     dangerCardHeader,
     infoCardHeader,
     primaryCardHeader
-  } from "../jss/KamdemMaterial.js";
+  } from "../jss/KamdemMaterial";
   const KamdemCardHeaderStyle = {
     cardHeader: {
       borderRadius: "3px",

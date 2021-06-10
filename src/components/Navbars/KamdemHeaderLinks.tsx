@@ -18,9 +18,9 @@ import { faFacebookF , faTwitterSquare, faInstagramSquare } from '@fortawesome/f
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 // core components
-import KamdemDropdown from "../jss/KamdemDropdown.js";
-import KamdemButton from "../jss/KamdemButton.js";
-import styles from "./KamdemHeaderLinksStyle.js";
+import KamdemDropdown from "../jss/KamdemDropdown";
+import KamdemButton from "../jss/KamdemButton";
+import styles from "./KamdemHeaderLinksStyle";
 
 const useStyles = makeStyles(styles);
 

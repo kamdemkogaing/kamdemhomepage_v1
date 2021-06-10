@@ -10,11 +10,11 @@ import Sports from "@material-ui/icons/Sports";
 import Build from "@material-ui/icons/Build";
 
 // core components
-import KamdemGridContainer from "../Grid/KamdemGridContainer.js";
-import KamdemGridItem from "../GridItem/KamdemGridItem.js";
+import KamdemGridContainer from "../Grid/KamdemGridContainer";
+import KamdemGridItem from "../GridItem/KamdemGridItem";
 
-import KamdemTabs from "../Tabs/KamdemTabs.js";
-import TabsStyle from "./KamdemSectionTabsStyle.js";
+import KamdemTabs from "../Tabs/KamdemTabs";
+import TabsStyle from "./KamdemSectionTabsStyle";
 
 const useStyles = makeStyles(TabsStyle);
 

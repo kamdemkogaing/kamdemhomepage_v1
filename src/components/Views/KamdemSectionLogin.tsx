@@ -12,18 +12,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF , faTwitterSquare, faInstagramSquare } from '@fortawesome/free-brands-svg-icons';
 
 // core components
-import KamdemGridContainer from "../Grid/KamdemGridContainer.js";
-import KamdemGridItem from "../GridItem/KamdemGridItem.js";
+import KamdemGridContainer from "../Grid/KamdemGridContainer";
+import KamdemGridItem from "../GridItem/KamdemGridItem";
 
-import KamdemCard from "../Card/KamdemCard.js";
-import KamdemCardBody from "../Card/KamdemCardBody.js";
-import KamdemCardHeader from "../Card/KamdemCardHeader.js";
-import KamdemCardFooter from "../Card/KamdemCardFooter.js";
+import KamdemCard from "../Card/KamdemCard";
+import KamdemCardBody from "../Card/KamdemCardBody";
+import KamdemCardHeader from "../Card/KamdemCardHeader";
+import KamdemCardFooter from "../Card/KamdemCardFooter";
 
-import KamdemButton from "../jss/KamdemButton.js";
-import KamdemCustomInput from "../jss/KamdemCustomInput.js";
+import KamdemButton from "../jss/KamdemButton";
+import KamdemCustomInput from "../jss/KamdemCustomInput";
 
-import styles from "./KamdemSectionLoginStyle.js";
+import styles from "./KamdemSectionLoginStyle";
 
 const useStyles = makeStyles(styles);
 

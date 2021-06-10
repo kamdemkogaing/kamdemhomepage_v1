@@ -6,7 +6,7 @@ import {
     successColor,
     warningColor,
     dangerColor
-  } from "../jss/KamdemMaterial.js";
+  } from "./KamdemMaterial";
   
   const KamdemButtonStyle = {
     button: {

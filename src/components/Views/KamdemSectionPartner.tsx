@@ -7,18 +7,18 @@ import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 
 // core components
-import KamdemGridContainer from "../Grid/KamdemGridContainer.js";
-import KamdemGridItem from "../GridItem/KamdemGridItem.js";
-import KamdemButton from "../jss/KamdemButton.js";
-import KamdemCard from "../Card/KamdemCard.js";
-import KamdemCardBody from "../Card/KamdemCardBody.js";
-import KamdemCardFooter from "../Card/KamdemCardFooter.js";
+import KamdemGridContainer from "../Grid/KamdemGridContainer";
+import KamdemGridItem from "../GridItem/KamdemGridItem";
+import KamdemButton from "../jss/KamdemButton";
+import KamdemCard from "../Card/KamdemCard";
+import KamdemCardBody from "../Card/KamdemCardBody";
+import KamdemCardFooter from "../Card/KamdemCardFooter";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF , faTwitterSquare, faInstagramSquare } from '@fortawesome/free-brands-svg-icons';
 
 
-import styles from "./KamdemSectionPartnerStyle.js";
+import styles from "./KamdemSectionPartnerStyle";
 
 import team1 from "../img/yane.png";
 import team2 from "../img/kogaing.jpg";

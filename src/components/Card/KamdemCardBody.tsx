@@ -8,29 +8,25 @@ import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 
 // core components
-import styles from "./KamdemCardHeaderStyle.js";
+import styles from "./KamdemCardBodySytle";
 
 const useStyles = makeStyles(styles);
 
-export default function KamdemCardHeader(props) {
+export default function KamdemCardBody(props) {
   const classes = useStyles();
-  const { className, children, color, plain, ...rest } = props;
-  const cardHeaderClasses = classNames({
-    [classes.cardHeader]: true,
-    [classes[color + "CardHeader"]]: color,
-    [classes.cardHeaderPlain]: plain,
+  const { className, children, ...rest } = props;
+  const cardBodyClasses = classNames({
+    [classes.cardBody]: true,
     [className]: className !== undefined
   });
   return (
-    <div className={cardHeaderClasses} {...rest}>
+    <div className={cardBodyClasses} {...rest}>
       {children}
     </div>
   );
 }
 
-KamdemCardHeader.propTypes = {
+KamdemCardBody.propTypes = {
   className: PropTypes.string,
-  color: PropTypes.oneOf(["warning", "success", "danger", "info", "primary"]),
-  plain: PropTypes.bool,
   children: PropTypes.node
 };

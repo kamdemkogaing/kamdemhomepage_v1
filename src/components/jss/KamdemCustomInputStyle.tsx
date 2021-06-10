@@ -3,7 +3,7 @@ import {
     dangerColor,
     successColor,
     defaultFont
-  } from "../jss/KamdemMaterial.js";
+  } from "../jss/KamdemMaterial";
   
   const KamdemCustomInputStyle = {
     disabled: {

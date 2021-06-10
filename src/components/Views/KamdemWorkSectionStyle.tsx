@@ -1,4 +1,4 @@
-import { title, container } from "../jss/KamdemMaterial.js";
+import { title, container } from "../jss/KamdemMaterial";
 
 const KamdemWorkStyle = {
   container,

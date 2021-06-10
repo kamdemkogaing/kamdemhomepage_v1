@@ -1,5 +1,5 @@
-import { cardTitle, title, container } from "../jss/KamdemMaterial.js";
-import imagesStyle from "../jss/KamdemImagesStyle.js";
+import { cardTitle, title, container } from "../jss/KamdemMaterial";
+import imagesStyle from "../jss/KamdemImagesStyle";
 
 const teamStyle = {
   container,

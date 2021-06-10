@@ -10,11 +10,11 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Icon from "@material-ui/core/Icon";
 // core components
-import KamdemCard from "../Card/KamdemCard.js";
-import KamdemCardBody from "../Card/KamdemCardBody.js";
-import KamdemCardHeader from "../Card/KamdemCardHeader.js";
+import KamdemCard from "../Card/KamdemCard";
+import KamdemCardBody from "../Card/KamdemCardBody";
+import KamdemCardHeader from "../Card/KamdemCardHeader";
 
-import styles from "../Views/KamdemSectionTabsStyle.js";
+import styles from "../Views/KamdemSectionTabsStyle";
 
 const useStyles = makeStyles(styles);
 

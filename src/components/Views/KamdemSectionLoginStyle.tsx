@@ -1,4 +1,4 @@
-import { container } from "../jss/KamdemMaterial.js";
+import { container } from "../jss/KamdemMaterial";
 import image from "../img/sign.jpg";
 
 const loginStyle = {

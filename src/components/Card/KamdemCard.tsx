@@ -8,25 +8,29 @@ import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 
 // core components
-import styles from "./KamdemCardBodySytle.js";
+import styles from "./KamdemCardStyle";
 
 const useStyles = makeStyles(styles);
 
-export default function KamdemCardBody(props) {
+export default function KamdemCard(props) {
   const classes = useStyles();
-  const { className, children, ...rest } = props;
-  const cardBodyClasses = classNames({
-    [classes.cardBody]: true,
+  const { className, children, plain, carousel, ...rest } = props;
+  const cardClasses = classNames({
+    [classes.card]: true,
+    [classes.cardPlain]: plain,
+    [classes.cardCarousel]: carousel,
     [className]: className !== undefined
   });
   return (
-    <div className={cardBodyClasses} {...rest}>
+    <div className={cardClasses} {...rest}>
       {children}
     </div>
   );
 }
 
-KamdemCardBody.propTypes = {
+KamdemCard.propTypes = {
   className: PropTypes.string,
+  plain: PropTypes.bool,
+  carousel: PropTypes.bool,
   children: PropTypes.node
 };

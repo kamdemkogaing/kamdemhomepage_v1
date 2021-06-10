@@ -1,4 +1,4 @@
-import { container } from "./KamdemMaterial.js";
+import { container } from "./KamdemMaterial";
 
 const KamdemComponentsStyle = {
   container,

@@ -11,7 +11,7 @@ import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 import Favorite from "@material-ui/icons/Favorite";
 
-import styles from "../Footers/KamdemFooterStyle.js";
+import styles from "./KamdemFooterStyle";
 
 const useStyles = makeStyles(styles);
 

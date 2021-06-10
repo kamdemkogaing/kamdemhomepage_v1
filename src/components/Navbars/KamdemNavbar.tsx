@@ -3,12 +3,12 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 // core components
-import KamdemHeader from "./KamdemHeader.js";
-import KamdemHeaderLinks from "./KamdemHeaderLinks.js";
-import KamdemGridContainer from "../Grid/KamdemGridContainer.js";
-import KamdemGridItem from "../GridItem/KamdemGridItem.js";
-import KamdemParallax from "../jss/KamdemParallax.js";
-import styles from "../jss/KamdemComponents.js";
+import KamdemHeader from "./KamdemHeader";
+import KamdemHeaderLinks from "./KamdemHeaderLinks";
+import KamdemGridContainer from "../Grid/KamdemGridContainer";
+import KamdemGridItem from "../GridItem/KamdemGridItem";
+import KamdemParallax from "../jss/KamdemParallax";
+import styles from "../jss/KamdemComponents";
 
 const useStyles = makeStyles(styles);
 

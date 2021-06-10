@@ -1,4 +1,4 @@
-import { container } from "../jss/KamdemMaterial.js";
+import { container } from "../jss/KamdemMaterial";
 
 const KamdemSectionTabsStyle = {
   container,

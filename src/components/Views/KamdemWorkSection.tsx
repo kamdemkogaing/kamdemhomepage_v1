@@ -6,12 +6,12 @@ import classNames from "classnames";
 // @material-ui/icons
 
 // core components
-import KamdemGridContainer from "../Grid/KamdemGridContainer.js";
-import KamdemGridItem from "../GridItem/KamdemGridItem.js";
-import KamdemCustomInput from "../jss/KamdemCustomInput.js";
-import KamdemButton from "../jss/KamdemButton.js";
+import KamdemGridContainer from "../Grid/KamdemGridContainer";
+import KamdemGridItem from "../GridItem/KamdemGridItem";
+import KamdemCustomInput from "../jss/KamdemCustomInput";
+import KamdemButton from "../jss/KamdemButton";
 
-import styles from "./KamdemWorkSectionStyle.js";
+import styles from "./KamdemWorkSectionStyle";
 
 const useStyles = makeStyles(styles);
 

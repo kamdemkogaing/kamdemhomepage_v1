@@ -1,4 +1,4 @@
-import { container, primaryColor } from "../jss/KamdemMaterial.js";
+import { container, primaryColor } from "../jss/KamdemMaterial";
 
 const KamdemFooterStyle = {
   block: {

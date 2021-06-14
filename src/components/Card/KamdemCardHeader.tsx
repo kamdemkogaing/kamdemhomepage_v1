@@ -12,7 +12,7 @@ import styles from "./KamdemCardHeaderStyle";
 
 const useStyles = makeStyles(styles);
 
-export default function KamdemCardHeader(props) {
+export default function KamdemCardHeader(props: { [x: string]: any; className: any; children: any; color: any; plain: any; }) {
   const classes = useStyles();
   const { className, children, color, plain, ...rest } = props;
   const cardHeaderClasses = classNames({

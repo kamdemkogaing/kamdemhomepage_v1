@@ -1,6 +1,7 @@
 import { container, primaryColor } from "../jss/KamdemMaterial";
+import { createStyles } from "@material-ui/core/styles";
 
-const KamdemFooterStyle = {
+const KamdemFooterStyle = createStyles({
   block: {
     color: "inherit",
     padding: "0.9375rem",
@@ -55,5 +56,5 @@ const KamdemFooterStyle = {
     position: "relative",
     top: "0px"
   }
-};
+});
 export default KamdemFooterStyle;

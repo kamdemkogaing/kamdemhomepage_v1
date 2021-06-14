@@ -12,7 +12,7 @@ import styles from "./KamdemCardFooterStyle";
 
 const useStyles = makeStyles(styles);
 
-export default function KamdemCardFooter(props) {
+export default function KamdemCardFooter(props: { [x: string]: any; className: any; children: any; }) {
   const classes = useStyles();
   const { className, children, ...rest } = props;
   const cardFooterClasses = classNames({

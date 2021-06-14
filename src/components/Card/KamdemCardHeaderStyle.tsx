@@ -1,3 +1,5 @@
+import { createStyles } from "@material-ui/core/styles";
+
 import {
     warningCardHeader,
     successCardHeader,
@@ -5,7 +7,7 @@ import {
     infoCardHeader,
     primaryCardHeader
   } from "../jss/KamdemMaterial";
-  const KamdemCardHeaderStyle = {
+  const KamdemCardHeaderStyle = createStyles ({
     cardHeader: {
       borderRadius: "3px",
       padding: "1rem 15px",
@@ -24,7 +26,7 @@ import {
     dangerCardHeader,
     infoCardHeader,
     primaryCardHeader
-  };
+  });
   
 export default KamdemCardHeaderStyle;
   

@@ -1,5 +1,6 @@
+import { createStyles } from "@material-ui/core/styles";
 
-const KamdemCardStyle = {
+const KamdemCardStyle = createStyles ({
   card: {
     border: "0",
     marginBottom: "30px",
@@ -25,7 +26,7 @@ const KamdemCardStyle = {
   cardCarousel: {
     overflow: "hidden"
   }
-};
+});
   
 export default KamdemCardStyle;
   

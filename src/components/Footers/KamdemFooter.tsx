@@ -15,7 +15,7 @@ import styles from "./KamdemFooterStyle";
 
 const useStyles = makeStyles(styles);
 
-export default function KamdemFooter(props) {
+export default function KamdemFooter(props: { whiteFont: any; }) {
   const classes = useStyles();
   const { whiteFont } = props;
   const footerClasses = classNames({

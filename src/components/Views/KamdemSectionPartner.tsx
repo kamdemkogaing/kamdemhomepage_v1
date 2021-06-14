@@ -22,7 +22,7 @@ import styles from "./KamdemSectionPartnerStyle";
 
 import team1 from "../img/yane.png";
 import team2 from "../img/kogaing.jpg";
-import team3 from "../img/cclean.jpg";
+import team3 from "../img/cclean.JPG";
 
 const useStyles = makeStyles(styles);
 

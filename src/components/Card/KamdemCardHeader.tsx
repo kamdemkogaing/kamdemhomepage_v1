@@ -1,18 +1,19 @@
-import React from "react";
+import React, { ReactNode } from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-// @material-ui/icons
-
 // core components
 import styles from "./KamdemCardHeaderStyle";
 
 const useStyles = makeStyles(styles);
 
-export default function KamdemCardHeader(props: { [x: string]: any; className: any; children: any; color: any; plain: any; }) {
+export default function KamdemCardHeader(props: { className: string; 
+                                                  children: ReactNode; 
+                                                  color: any; 
+                                                  plain: boolean; }) {
   const classes = useStyles();
   const { className, children, color, plain, ...rest } = props;
   const cardHeaderClasses = classNames({

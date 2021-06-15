@@ -4,8 +4,10 @@ import {
     successColor,
     defaultFont
   } from "../jss/KamdemMaterial";
+
+import { createStyles } from "@material-ui/core/styles";
   
-  const KamdemCustomInputStyle = {
+  const KamdemCustomInputStyle = createStyles({
     disabled: {
       "&:before": {
         borderColor: "transparent !important"
@@ -84,7 +86,7 @@ import {
         opacity: "1"
       }
     }
-  };
+  });
   
   export default KamdemCustomInputStyle;
   

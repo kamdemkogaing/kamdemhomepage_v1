@@ -2,7 +2,7 @@ import { defaultFont } from "../jss/KamdemMaterial";
 
 import tooltip from "../jss/KamdemTooltipsStyle";
 
-const KamdemHeaderLinksStyle = theme => ({
+const KamdemHeaderLinksStyle = (theme: { breakpoints: { down: (arg0: string) => any; }; }) => ({
   list: {
     ...defaultFont,
     fontSize: "14px",

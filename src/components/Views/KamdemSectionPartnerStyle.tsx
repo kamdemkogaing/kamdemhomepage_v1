@@ -1,7 +1,8 @@
 import { cardTitle, title, container } from "../jss/KamdemMaterial";
 import imagesStyle from "../jss/KamdemImagesStyle";
+import { createStyles } from "@material-ui/core/styles";
 
-const teamStyle = {
+const teamStyle = createStyles({
   container,
   brand: {
     color: "#FFFFFF",
@@ -47,6 +48,6 @@ const teamStyle = {
   margin5: {
     margin: "5px"
   }
-};
+});
 
 export default teamStyle;

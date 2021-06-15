@@ -13,8 +13,10 @@ import {
     roseColor,
     roseBoxShadow
   } from "../jss/KamdemMaterial";
+
+  import { createStyles } from "@material-ui/core/styles";
   
-  const KamdemDropdownStyle = theme => ({
+  const KamdemDropdownStyle = (theme: { breakpoints: { down: (arg0: string) => any; }; }) => createStyles({
     popperClose: {
       pointerEvents: "none"
     },

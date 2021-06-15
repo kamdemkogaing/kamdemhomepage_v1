@@ -1,4 +1,6 @@
-const KamdemParallaxStyle = {
+import { createStyles } from "@material-ui/core/styles";
+
+const KamdemParallaxStyle = createStyles({
     parallax: {
       height: "90vh",
       maxHeight: "1000px",
@@ -30,7 +32,7 @@ const KamdemParallaxStyle = {
     small: {
       height: "380px"
     }
-  };
+  });
   
   export default KamdemParallaxStyle;
   

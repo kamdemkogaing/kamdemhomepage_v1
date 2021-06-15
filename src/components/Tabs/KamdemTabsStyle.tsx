@@ -1,4 +1,6 @@
-const KamdemSectionTabsStyle = {
+import { createStyles } from "@material-ui/core/styles";
+
+const KamdemSectionTabsStyle = createStyles({
     cardTitle: {
       float: "left",
       padding: "10px 10px 10px 0px",
@@ -53,7 +55,7 @@ const KamdemSectionTabsStyle = {
         letterSpacing: "normal !important"
       }
     }
-  };
+  });
   
   export default KamdemSectionTabsStyle;
   

@@ -13,7 +13,7 @@ import styles from "./KamdemCustomInputStyle";
 
 const useStyles = makeStyles(styles);
 
-export default function CustomInput(props) {
+export default function CustomInput(props: { formControlProps: any; labelText: any; id: any; labelProps: any; inputProps: any; error: any; white: any; inputRootCustomClasses: any; success: any; }) {
   const classes = useStyles();
   const {
     formControlProps,

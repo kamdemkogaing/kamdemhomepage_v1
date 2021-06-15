@@ -18,10 +18,10 @@ import styles from "../Views/KamdemSectionTabsStyle";
 
 const useStyles = makeStyles(styles);
 
-export default function KamdemTabs(props) {
+export default function KamdemTabs(props: { headerColor: any; plainTabs: any; tabs: any; title: any; rtlActive: any; }) {
   const [value, setValue] = React.useState(0);
 
-  const handleChange = (event, value) => {
+  const handleChange = (event: any, value: React.SetStateAction<number>) => {
     setValue(value);
   };
   const classes = useStyles();

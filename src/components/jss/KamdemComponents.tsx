@@ -1,6 +1,7 @@
 import { container } from "./KamdemMaterial";
+import { createStyles } from "@material-ui/core/styles";
 
-const KamdemComponentsStyle = {
+const KamdemComponentsStyle = createStyles({
   container,
   brand: {
     color: "#FFFFFF",
@@ -34,6 +35,6 @@ const KamdemComponentsStyle = {
   textCenter: {
     textAlign: "center"
   }
-};
+});
 
 export default KamdemComponentsStyle;

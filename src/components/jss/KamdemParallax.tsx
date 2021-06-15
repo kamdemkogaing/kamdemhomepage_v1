@@ -11,7 +11,7 @@ import styles from "./KamdemParallaxStyle";
 
 const useStyles = makeStyles(styles);
 
-export default function KamdemPrallax(props) {
+export default function KamdemPrallax(props: { filter: any; className: any; children: any; style: any; image: any; small: any; }) {
   let windowScrollTop;
   if (window.innerWidth >= 768) {
     windowScrollTop = window.pageYOffset / 3;

@@ -1,6 +1,7 @@
 import { container } from "../jss/KamdemMaterial";
+import { createStyles } from "@material-ui/core/styles";
 
-const KamdemSectionTabsStyle = {
+const KamdemSectionTabsStyle = createStyles({
   container,
   brand: {
     color: "#FFFFFF",
@@ -92,6 +93,6 @@ const KamdemSectionTabsStyle = {
       letterSpacing: "normal !important"
     }
   }
-};
+});
 
 export default KamdemSectionTabsStyle;

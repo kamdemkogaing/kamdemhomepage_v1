@@ -21,7 +21,7 @@ import styles from "./KamdemDropdownStyle";
 
 const useStyles = makeStyles(styles);
 
-export default function KamdemDropdown(props) {
+export default function KamdemDropdown(props: { onClick?: any; buttonIcon: any; buttonText?: any; dropdownList?: any; buttonProps?: any; dropup?: any; dropdownHeader?: any; caret?: any; hoverColor?: any; left?: any; rtlActive?: any; noLiPadding?: any; }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const handleClick = event => {
     if (anchorEl && anchorEl.contains(event.target)) {

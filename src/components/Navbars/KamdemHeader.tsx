@@ -18,7 +18,7 @@ import styles from "./KamdemHeaderStyle";
 
 const useStyles = makeStyles(styles);
 
-export default function KamdemHeader(props) {
+export default function KamdemHeader(props: { changeColorOnScroll?: any; color?: any; rightLinks?: any; leftLinks?: any; brand?: any; fixed?: any; absolute?: any; }) {
   const classes = useStyles();
   const [mobileOpen, setMobileOpen] = React.useState(false);
   React.useEffect(() => {

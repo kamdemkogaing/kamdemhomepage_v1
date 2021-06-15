@@ -5,7 +5,8 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 
 // @material-ui/core components
-import makeStyles from "@material-ui/core/styles/makeStyles";
+import {createStyles, makeStyles} from "@material-ui/core/styles";
+
 import Button from "@material-ui/core/Button";
 
 // core components

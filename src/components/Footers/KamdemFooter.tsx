@@ -70,7 +70,7 @@ export default function KamdemFooter(props: { whiteFont: any; }) {
           </List>
         </div>
         <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()} , copyright {" "}
+          &copy; {2024 + new Date().getFullYear()} , copyright {" "}
           <Favorite className={classes.icon} /> by{" "}
           <a
             href="https://www.creative-tim.com?ref=mkr-footer"

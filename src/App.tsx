@@ -1,8 +1,7 @@
-
-import KamdemNavbar from './components/Navbars/KamdemNavbar';
-import KamdemFooter from './components/Footers/KamdemFooter';
-import KamdemSectionTabs from './components/Views/KamdemSectionTabs';
-import KamdemSectionLogin from './components/Views/KamdemSectionLogin';
+import KamdemNavbar from "./components/Navbars/KamdemNavbar";
+import KamdemFooter from "./components/Footers/KamdemFooter";
+import KamdemSectionTabs from "./components/Views/KamdemSectionTabs";
+import KamdemSectionLogin from "./components/Views/KamdemSectionLogin";
 import KamdemWorkSection from "./components/Views/KamdemWorkSection";
 import KamdemWorkSectionPartner from "./components/Views/KamdemSectionPartner";
 

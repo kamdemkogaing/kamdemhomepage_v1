@@ -10,28 +10,12 @@ import {createStyles, makeStyles} from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 
 // core components
-
 import buttonStyle from "./KamdemButtonStyle";
 
-const makeComponentStyles = makeStyles(() => ({
-  ...buttonStyle
-}));
+const makeComponentStyles = makeStyles(() => ({...buttonStyle}));
 
-const KamdemButton = React.forwardRef((props, ref) => {
-  const {
-    color,
-    round,
-    children,
-    fullWidth,
-    disabled,
-    simple,
-    size,
-    block,
-    link,
-    justIcon,
-    className,
-    ...rest
-  } = props;
+const KamdemButton = React.forwardRef((props:{color:any; round:any; children:any; fullWidth:any; disabled:any; simple:any; size:any; block:any; link:any; justIcon:any; className:any}, ref) => {
+  const {color, round, children, fullWidth, disabled, simple, size, block, link, justIcon, className, ...rest} = props;
 
   const classes = makeComponentStyles();
 
@@ -48,8 +32,9 @@ const KamdemButton = React.forwardRef((props, ref) => {
     [classes.justIcon]: justIcon,
     [className]: className
   });
+  
   return (
-    <Button {...rest} ref={ref} className={btnClasses}>
+    <Button {...rest} className={btnClasses}>
       {children}
     </Button>
   );

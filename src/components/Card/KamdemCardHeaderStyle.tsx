@@ -16,7 +16,8 @@ import {
       marginRight: "15px",
       marginTop: "-30px",
       border: "0",
-      marginBottom: "0"
+      marginBottom: "0",
+      color: "green"
     },
     cardHeaderPlain: {
       marginLeft: "0px",

@@ -43,7 +43,7 @@ import { createStyles } from "@material-ui/core/styles";
     labelRoot: {
       ...defaultFont,
       color: "#AAAAAA !important",
-      fontWeight: "400",
+      fontWeight: 400,
       fontSize: "14px",
       lineHeight: "1.42857",
       top: "10px",

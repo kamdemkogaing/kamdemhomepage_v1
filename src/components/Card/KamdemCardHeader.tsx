@@ -18,7 +18,7 @@ export default function KamdemCardHeader(props: { className: string;
   const { className, children, color, plain, ...rest } = props;
   const cardHeaderClasses = classNames({
     [classes.cardHeader]: true,
-    [classes[color + "CardHeader"]]: color,
+    /* [classes[color + "CardHeader"]: color, */
     [classes.cardHeaderPlain]: plain,
     [className]: className !== undefined
   });

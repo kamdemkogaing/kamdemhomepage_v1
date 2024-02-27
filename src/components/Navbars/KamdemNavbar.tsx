@@ -12,7 +12,7 @@ import styles from "../jss/KamdemComponents";
 
 const useStyles = makeStyles(styles);
 
-export default function KamdemNavbar(props: { [x: string]: any; }) {
+export default function KamdemNavbar(props: { [x: string]: any }) {
   const classes = useStyles();
   const { ...rest } = props;
   return (
@@ -24,7 +24,7 @@ export default function KamdemNavbar(props: { [x: string]: any; }) {
         color="transparent"
         changeColorOnScroll={{
           height: 400,
-          color: "white"
+          color: "white",
         }}
         {...rest}
       />
@@ -43,4 +43,3 @@ export default function KamdemNavbar(props: { [x: string]: any; }) {
     </div>
   );
 }
-

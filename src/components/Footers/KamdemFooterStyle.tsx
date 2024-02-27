@@ -5,7 +5,7 @@ const KamdemFooterStyle = createStyles({
   block: {
     color: "inherit",
     padding: "0.9375rem",
-    fontWeight: "500",
+    fontWeight: 500,
     fontSize: "12px",
     textTransform: "uppercase",
     borderRadius: "3px",
@@ -14,19 +14,19 @@ const KamdemFooterStyle = createStyles({
     display: "block"
   },
   left: {
-    float: "left!important",
+    float: "left",
     display: "block"
   },
   right: {
     padding: "15px 0",
     margin: "0",
-    float: "right!important"
+    float: "right"
   },
   footer: {
     padding: "0.9375rem 0",
     textAlign: "center",
     display: "flex",
-    zIndex: "2",
+    zIndex: 2,
     position: "relative"
   },
   a: {

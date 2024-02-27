@@ -22,21 +22,23 @@ import styles from "./KamdemDropdownStyle";
 const useStyles = makeStyles(styles);
 
 export default function KamdemDropdown(props: { onClick?: any; buttonIcon: any; buttonText?: any; dropdownList?: any; buttonProps?: any; dropup?: any; dropdownHeader?: any; caret?: any; hoverColor?: any; left?: any; rtlActive?: any; noLiPadding?: any; }) {
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const handleClick = event => {
+  const [anchorEl, setAnchorEl] = React.useState<any>(null);
+  const handleClick = (event: { target: any; 
+                                currentTarget: React.SetStateAction<null>; 
+                              }) => {
     if (anchorEl && anchorEl.contains(event.target)) {
       setAnchorEl(null);
     } else {
       setAnchorEl(event.currentTarget);
     }
   };
-  const handleClose = param => {
+  const handleClose = (param: string) => {
     setAnchorEl(null);
     if (props && props.onClick) {
       props.onClick(param);
     }
   };
-  const handleCloseAway = event => {
+  const handleCloseAway = (event: { target: any; }) => {
     if (anchorEl.contains(event.target)) {
       return;
     }
@@ -63,7 +65,7 @@ export default function KamdemDropdown(props: { onClick?: any; buttonIcon: any; 
   });
   const dropdownItem = classNames({
     [classes.dropdownItem]: true,
-    [classes[hoverColor + "Hover"]]: true,
+    /* [classes[hoverColor + "Hover"]]: true, */
     [classes.noLiPadding]: noLiPadding,
     [classes.dropdownItemRTL]: rtlActive
   });
@@ -116,7 +118,7 @@ export default function KamdemDropdown(props: { onClick?: any; buttonIcon: any; 
         {() => (
           <Grow
             in={Boolean(anchorEl)}
-            id="menu-list"
+            /* id="menu-list" */
             style={
               dropup
                 ? { transformOrigin: "0 100% 0" }

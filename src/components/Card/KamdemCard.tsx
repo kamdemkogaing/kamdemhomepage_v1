@@ -12,7 +12,11 @@ import styles from "./KamdemCardStyle";
 
 const useStyles = makeStyles(styles);
 
-export default function KamdemCard(props: { [x: string]: any; className: any; children: any; plain: any; carousel: any; }) {
+export default function KamdemCard(props: { [x: string]: any; 
+                                            className?: any; 
+                                            children?: any; 
+                                            plain?: any; 
+                                            carousel?: any; }) {
   const classes = useStyles();
   const { className, children, plain, carousel, ...rest } = props;
   const cardClasses = classNames({

@@ -12,7 +12,9 @@ import {
   drawerWidth
 } from "../jss/KamdemMaterial";
 
-const KamdemHeaderStyle = {
+import { createStyles } from "@material-ui/core/styles";
+
+const KamdemHeaderStyle = createStyles({
   appBar: {
     display: "flex",
     border: "0",
@@ -33,11 +35,11 @@ const KamdemHeaderStyle = {
   },
   absolute: {
     position: "absolute",
-    zIndex: "1100"
+    zIndex: 1100
   },
   fixed: {
     position: "fixed",
-    zIndex: "1100"
+    zIndex: 1100
   },
   container: {
     ...container,
@@ -52,7 +54,6 @@ const KamdemHeaderStyle = {
     flex: 1
   },
   title: {
-    ...defaultFont,
     lineHeight: "30px",
     fontSize: "18px",
     borderRadius: "3px",
@@ -147,6 +148,6 @@ const KamdemHeaderStyle = {
     paddingLeft: "0",
     ...transition
   }
-};
+});
 
 export default KamdemHeaderStyle;

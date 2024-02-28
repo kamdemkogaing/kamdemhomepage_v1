@@ -11,7 +11,7 @@ const KamdemWorkStyle = createStyles({
     padding: "70px 0"
   },
   title: {
-    ...title,
+    /* ...title, */
     marginBottom: "50px",
     marginTop: "30px",
     minHeight: "32px",
@@ -32,7 +32,7 @@ const KamdemWorkStyle = createStyles({
   main: {
     background: "#FFFFFF",
     position: "relative",
-    zIndex: "3"
+    zIndex: 3
   },
   mainRaised: {
     margin: "-60px 30px 0px",

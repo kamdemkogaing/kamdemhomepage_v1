@@ -14,7 +14,7 @@ import buttonStyle from "./KamdemButtonStyle";
 
 const makeComponentStyles = makeStyles(() => ({...buttonStyle}));
 
-const KamdemButton = React.forwardRef((props:{color:any; round:any; children:any; fullWidth:any; disabled:any; simple:any; size:any; block:any; link:any; justIcon:any; className:any}, ref) => {
+const KamdemButton = React.forwardRef((props:{color?:any; round?:any; children?:any; fullWidth?:any; disabled?:any; simple?:any; size?:any; block?:any; link?:any; justIcon?:any; className?:any}, ref) => {
   const {color, round, children, fullWidth, disabled, simple, size, block, link, justIcon, className, ...rest} = props;
 
   const classes = makeComponentStyles();

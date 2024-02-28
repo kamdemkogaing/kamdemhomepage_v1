@@ -1,5 +1,5 @@
 import { container } from "../jss/KamdemMaterial";
-import image from "../img/sign.jpg";
+/* import image from "../img/sign.jpg"; */
 import { createStyles } from "@material-ui/core/styles";
 
 const loginStyle = createStyles({
@@ -14,7 +14,7 @@ const loginStyle = createStyles({
     border: "0",
     display: "flex",
     alignItems: "center",
-    backgroundImage: "url(" + image + ")"
+   /*  backgroundImage: "url(" + image + ")" */
   },
   container,
   form: {

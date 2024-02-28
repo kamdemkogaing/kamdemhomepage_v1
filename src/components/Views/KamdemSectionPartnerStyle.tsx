@@ -13,18 +13,35 @@ const teamStyle = createStyles({
     textAlign: "center"
   },
   title: {
-    ...title,
+    /* ...title, */
     marginBottom: "1rem",
     marginTop: "30px",
     minHeight: "32px",
     textDecoration: "none"
   },
-  ...imagesStyle,
+ /*  ...imagesStyle, */
   itemGrid: {
     marginLeft: "auto",
     marginRight: "auto"
   },
-  cardTitle,
+  cardTitle: {
+
+  },
+  main: {
+    
+  },
+  mainRaised: {
+    
+  },
+  imgRaised: {
+    
+  },
+  imgRoundedCircle: {
+    
+  },
+  imgFluid: {
+    
+  },
   smallTitle: {
     color: "#6c757d"
   },

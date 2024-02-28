@@ -15,7 +15,7 @@ const styles = {
 };
 
 const useStyles = makeStyles(styles);
-export default function KamdemGridContainer(props: { [x: string]: any; children: any; className: any; }) {
+export default function KamdemGridContainer(props: { [x: string]: any; children?: any; className?: any; }) {
   const classes = useStyles();
   const { children, className, ...rest } = props;
   return (

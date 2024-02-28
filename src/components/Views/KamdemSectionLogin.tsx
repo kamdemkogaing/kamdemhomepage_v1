@@ -7,6 +7,7 @@ import Icon from "@material-ui/core/Icon";
 import People from "@material-ui/icons/People";
 import Email from "@material-ui/icons/Email";
 import LockIcon from '@material-ui/icons/Lock';
+import {Link, LinkProps} from "react-router-dom";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF , faTwitterSquare, faInstagramSquare } from '@fortawesome/free-brands-svg-icons';
@@ -41,32 +42,25 @@ export default function KamdemSectionLogin() {
                   <div className={classes.socialLine}>
                     <KamdemButton
                       justIcon
-                      href="https://twitter.com/PatrickKamdem7"
-                      target="_blank"
                       color="transparent"
-                      /* onClick={e => e.preventDefault()} */
                     >
-                      {/* <i className={classes.socialIcons + " fab fa-twitter"} /> */}
+                      <i className={classes.socialIcons + " fab fa-twitter"} />
                       <FontAwesomeIcon icon={faTwitterSquare} />
                     </KamdemButton>
                     <KamdemButton
                       justIcon
-                      href="https://www.facebook.com/patrick.kamdem"
-                      target="_blank"
                       color="transparent"
                       /* onClick={e => e.preventDefault()} */
                     >
-                      {/* <i className={classes.socialIcons + " fab fa-facebook"} /> */}
+                      <i className={classes.socialIcons + " fab fa-facebook"} />
                       <FontAwesomeIcon icon={faFacebookF} />
                     </KamdemButton>
                     <KamdemButton
                       justIcon
-                      href="https://www.instagram.com/kamdem73"
-                      target="_blank"
                       color="transparent"
                       /* onClick={e => e.preventDefault()} */
                     >
-                      {/* <i className={classes.socialIcons + " fab fa-google-plus-g"} /> */}
+                      <i className={classes.socialIcons + " fab fa-google-plus-g"} />
                       <FontAwesomeIcon icon={faInstagramSquare} />
                     </KamdemButton>
                   </div>

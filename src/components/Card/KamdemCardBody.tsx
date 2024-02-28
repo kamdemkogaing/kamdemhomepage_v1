@@ -12,7 +12,9 @@ import styles from "./KamdemCardBodySytle";
 
 const useStyles = makeStyles(styles);
 
-export default function KamdemCardBody(props: { [x: string]: any; className: any; children: any; }) {
+export default function KamdemCardBody(props: { [x: string]: any; 
+                                                className?: any; 
+                                                children: any; }) {
   const classes = useStyles();
   const { className, children, ...rest } = props;
   const cardBodyClasses = classNames({

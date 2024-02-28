@@ -13,7 +13,7 @@ const KamdemSectionTabsStyle = createStyles({
   },
   title: {
     fontSize: "4.2rem",
-    fontWeight: "600",
+    fontWeight: 600,
     display: "inline-block",
     position: "relative"
   },
@@ -25,7 +25,7 @@ const KamdemSectionTabsStyle = createStyles({
   main: {
     background: "#FFFFFF",
     position: "relative",
-    zIndex: "3"
+    zIndex: 3
   },
   mainRaised: {
     margin: "-60px 30px 0px",
@@ -38,6 +38,9 @@ const KamdemSectionTabsStyle = createStyles({
   },
   textCenter: {
     textAlign: "center"
+  },
+  textLeft: {
+    textAlign: "left"
   },
   cardTitle: {
     float: "left",
@@ -67,7 +70,7 @@ const KamdemSectionTabsStyle = createStyles({
     border: "0 !important",
     color: "#fff !important",
     marginLeft: "4px",
-    fontWeight: "500",
+    fontWeight: 500,
     fontSize: "12px",
     "&:last-child": {
       marginLeft: "0px"

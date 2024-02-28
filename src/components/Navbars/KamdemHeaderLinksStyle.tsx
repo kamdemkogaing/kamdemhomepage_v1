@@ -1,8 +1,9 @@
 import { defaultFont } from "../jss/KamdemMaterial";
 
 import tooltip from "../jss/KamdemTooltipsStyle";
+import { createStyles, makeStyles } from "@material-ui/core/styles";
 
-const KamdemHeaderLinksStyle = (theme: { breakpoints: { down: (arg0: string) => any; }; }) => ({
+const KamdemHeaderLinksStyle = createStyles((theme: {breakpoints: {down: (arg0: string) => any;};}) => ({
   list: {
     ...defaultFont,
     fontSize: "14px",
@@ -112,6 +113,6 @@ const KamdemHeaderLinksStyle = (theme: { breakpoints: { down: (arg0: string) => 
   marginRight5: {
     marginRight: "5px"
   }
-});
+}));
 
 export default KamdemHeaderLinksStyle;

@@ -16,14 +16,19 @@ import KamdemCardHeader from "../Card/KamdemCardHeader";
 
 import styles from "../Views/KamdemSectionTabsStyle";
 
-const useStyles = makeStyles(styles);
+/* const useStyles = makeStyles(styles); */
 
-export default function KamdemTabs(props: { headerColor: any; plainTabs: any; tabs: any; title: any; rtlActive: any; }) {
+export default function KamdemTabs(props: { headerColor: any; 
+                                            plainTabs: any; 
+                                            tabs: any; 
+                                            title: any; 
+                                            rtlActive: any; }) {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event: any, value: React.SetStateAction<number>) => {
     setValue(value);
   };
+  const useStyles = makeStyles(styles);
   const classes = useStyles();
   const { headerColor, plainTabs, tabs, title, rtlActive } = props;
   const cardTitle = classNames({
@@ -58,7 +63,6 @@ export default function KamdemTabs(props: { headerColor: any; plainTabs: any; ta
               <Tab
                 classes={{
                   root: classes.tabRootButton,
-                  label: classes.tabLabel,
                   selected: classes.tabSelected,
                   wrapper: classes.tabWrapper
                 }}

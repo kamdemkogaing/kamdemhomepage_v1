@@ -10,10 +10,10 @@ import styles from "./KamdemCardHeaderStyle";
 
 const useStyles = makeStyles(styles);
 
-export default function KamdemCardHeader(props: { className: string; 
-                                                  children: ReactNode; 
-                                                  color: any; 
-                                                  plain: boolean; }) {
+export default function KamdemCardHeader(props: { className?: string; 
+                                                  children?: ReactNode; 
+                                                  color?: any; 
+                                                  plain?: boolean; }) {
   const classes = useStyles();
   const { className, children, color, plain, ...rest } = props;
   const cardHeaderClasses = classNames({

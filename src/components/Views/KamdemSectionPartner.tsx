@@ -20,10 +20,6 @@ import { faFacebookF , faTwitterSquare, faInstagramSquare } from '@fortawesome/f
 
 import styles from "./KamdemSectionPartnerStyle";
 
-import team1 from "../img/yane.png";
-import team2 from "../img/kogaing.jpg";
-import team3 from "../img/cclean.JPG";
-
 const useStyles = makeStyles(styles);
 
 export default function TeamSection() {
@@ -43,7 +39,7 @@ export default function TeamSection() {
                         <KamdemGridItem xs={12} sm={12} md={4}>
                             <KamdemCard plain>
                                 <KamdemGridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                                    <img src={team1} alt="..." className={imageClasses} />
+                                    <img src={require('/img/logo192.png')} alt="..." className={imageClasses} />
                                 </KamdemGridItem>
                                 <h4 className={classes.cardTitle}>
                                     Yane Yamkwe
@@ -61,7 +57,7 @@ export default function TeamSection() {
                                     color="transparent"
                                     className={classes.margin5}
                                     >
-                                        {/* <i className={classes.socials + " fab fa-twitter"} /> */}
+                                        <i className={classes.socials + " fab fa-twitter"} />
                                         <FontAwesomeIcon icon={faTwitterSquare} />
                                     </KamdemButton>
                                     <KamdemButton
@@ -69,7 +65,7 @@ export default function TeamSection() {
                                     color="transparent"
                                     className={classes.margin5}
                                     >
-                                        {/* <i className={classes.socials + " fab fa-instagram"} /> */}
+                                        <i className={classes.socials + " fab fa-instagram"} />
                                         <FontAwesomeIcon icon={faInstagramSquare} />
                                     </KamdemButton>
                                     <KamdemButton
@@ -77,7 +73,7 @@ export default function TeamSection() {
                                     color="transparent"
                                     className={classes.margin5}
                                     >
-                                        {/* <i className={classes.socials + " fab fa-facebook"} /> */}
+                                        <i className={classes.socials + " fab fa-facebook"} />
                                         <FontAwesomeIcon icon={faFacebookF} />
                                     </KamdemButton>
                                 </KamdemCardFooter>
@@ -86,7 +82,7 @@ export default function TeamSection() {
                         <KamdemGridItem xs={12} sm={12} md={4}>
                             <KamdemCard plain>
                                 <KamdemGridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                                    <img src={team2} alt="..." className={imageClasses} />
+                                    <img src={require('/img/logo192.png')} alt="..." className={imageClasses} />
                                 </KamdemGridItem>
                                 <h4 className={classes.cardTitle}>
                                     Kogaing SARL
@@ -104,7 +100,7 @@ export default function TeamSection() {
                                     color="transparent"
                                     className={classes.margin5}
                                     >
-                                        {/* <i className={classes.socials + " fab fa-twitter"} /> */}
+                                        <i className={classes.socials + " fab fa-twitter"} />
                                         <FontAwesomeIcon icon={faTwitterSquare} />
                                     </KamdemButton>
                                     <KamdemButton
@@ -112,7 +108,7 @@ export default function TeamSection() {
                                     color="transparent"
                                     className={classes.margin5}
                                     >
-                                        {/* <i className={classes.socials + " fab fa-linkedin"} /> */}
+                                        <i className={classes.socials + " fab fa-linkedin"} />
                                         <FontAwesomeIcon icon={faInstagramSquare} />
                                     </KamdemButton>
                                 </KamdemCardFooter>
@@ -121,7 +117,7 @@ export default function TeamSection() {
                         <KamdemGridItem xs={12} sm={12} md={4}>
                             <KamdemCard plain>
                                 <KamdemGridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                                    <img src={team3} alt="..." className={imageClasses} />
+                                    <img src={require('/img/logo192.png')} alt="..." className={imageClasses} />
                                 </KamdemGridItem>
                                 <h4 className={classes.cardTitle}>
                                     C'Clean Services
@@ -139,7 +135,7 @@ export default function TeamSection() {
                                     color="transparent"
                                     className={classes.margin5}
                                     >
-                                        {/*  <i className={classes.socials + " fab fa-twitter"} /> */}
+                                         <i className={classes.socials + " fab fa-twitter"} />
                                         <FontAwesomeIcon icon={faTwitterSquare} />
                                     </KamdemButton>
                                     <KamdemButton
@@ -147,7 +143,7 @@ export default function TeamSection() {
                                     color="transparent"
                                     className={classes.margin5}
                                     >
-                                        {/* <i className={classes.socials + " fab fa-instagram"} /> */}
+                                        <i className={classes.socials + " fab fa-instagram"} />
                                         <FontAwesomeIcon icon={faInstagramSquare} />
                                     </KamdemButton>
                                     <KamdemButton
@@ -155,7 +151,7 @@ export default function TeamSection() {
                                     color="transparent"
                                     className={classes.margin5}
                                     >
-                                        {/* <i className={classes.socials + " fab fa-facebook"} /> */}
+                                        <i className={classes.socials + " fab fa-facebook"} />
                                         <FontAwesomeIcon icon={faFacebookF} />
                                     </KamdemButton>
                                 </KamdemCardFooter>

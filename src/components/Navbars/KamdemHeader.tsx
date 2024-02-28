@@ -68,27 +68,27 @@ export default function KamdemHeader(props: { changeColorOnScroll?: any; color?:
         <div className={classes.flex}>
           {leftLinks !== undefined ? (
             <Hidden smDown implementation="css">
-              {leftLinks}
+              {/* {leftLinks} */}
             </Hidden>
           ) : (
             brandComponent
           )}
         </div>
         <Hidden smDown implementation="css">
-          {rightLinks}
+          {/* {rightLinks} */}
         </Hidden>
         <Hidden mdUp>
-          <IconButton
+          {/* <IconButton
             color="inherit"
             aria-label="open drawer"
             onClick={handleDrawerToggle}
           >
             <Menu />
-          </IconButton>
+          </IconButton> */}
         </Hidden>
       </Toolbar>
       <Hidden mdUp implementation="js">
-        <Drawer
+        {/* <Drawer
           variant="temporary"
           anchor={"right"}
           open={mobileOpen}
@@ -101,7 +101,7 @@ export default function KamdemHeader(props: { changeColorOnScroll?: any; color?:
             {leftLinks}
             {rightLinks}
           </div>
-        </Drawer>
+        </Drawer> */}
       </Hidden>
     </AppBar>
   );

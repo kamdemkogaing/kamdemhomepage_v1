@@ -12,7 +12,7 @@ import styles from "../jss/KamdemComponents";
 
 const useStyles = makeStyles(styles);
 
-export default function KamdemNavbar(props: { [x: string]: any }) {
+export default function KamdemNavbar(props: { [x: string]: any; children?: any; className?: any; }) {
   const classes = useStyles();
   const { ...rest } = props;
   return (
